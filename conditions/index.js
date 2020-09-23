@@ -103,7 +103,6 @@ isExist? alert(42):alert('Cette variable n\'existe pas !')
  */
 
 var familyNumber = (Number(prompt("Entrez un nombre :"))).toString().split('')
-console.log(familyNumber)
 
 switch (familyNumber.length) {
   case 1:
