@@ -77,9 +77,13 @@ console.log(nbr)
  * Exercice n°7
  */
 
-var cloth = []
+var cloth = {
+  "tShirt": {},
+  "pullOver": {},
+  "sweetShirt": {}
+}
 var parentCloth = {
-  'nameCloth': ["truc", "bidule", "machin"],
+  'nameCloth': ["tShirt", "pullOver", "sweetShirt"],
   'size': ["XS", "S", "L", "M", "XL", "XXL"],
   'price': [49.99, 99.99, 149.99],
   'tva': [20]
@@ -95,7 +99,7 @@ for (const key in parentCloth['nameCloth']) {
     'price': price - tva,
     'tva': tva
   }
-  cloth.push(newCloth)
+  cloth[parentCloth['nameCloth'][key]] = newCloth
 }
 console.log(cloth)
 
